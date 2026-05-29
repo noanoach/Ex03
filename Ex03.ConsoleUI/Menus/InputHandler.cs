@@ -1,10 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ex03.ConsoleUI.Menus
+﻿namespace Ex03.ConsoleUI.Menus
 {
-    internal class InputHandler
+    public static class InputHandler
     {
+        public static int ReadMenuChoice()
+        {
+            return 0;
+        }
+
+        public static string ReadLicenseNumber()
+        {
+            return string.Empty;
+        }
+
+        public static string ReadOwnerName()
+        {
+            return string.Empty;
+        }
+
+        public static string ReadOwnerPhone()
+        {
+            return string.Empty;
+        }
     }
 }

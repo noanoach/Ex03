@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ex03.ConsoleUI.Menus
+﻿namespace Ex03.ConsoleUI.Menus
 {
-    internal class MainMenu
+    public static class MainMenu
     {
+        public static void Show()
+        {
+        }
     }
 }
