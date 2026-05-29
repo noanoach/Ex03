@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Ex03.GarageLogic.Enums
 {
-    internal class eVehicleStatus
+    public enum eVehicleStatus
     {
+        InRepair,
+        Repaired,
+        Paid
     }
 }
