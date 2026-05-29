@@ -1,7 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\fueltruck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\fueltruck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\electricmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\electricmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\fuelmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\fuelmotorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\electriccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\electriccar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\fuelcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\fuelcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\factory\\vehiclescreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\factory\\vehiclescreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\DN_2026B_Ex03\\VehicleCreator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\energysources\\fuelenergysource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\energysources\\fuelenergysource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\truck.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\motorcycle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\vehicles\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\vehicles\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\garage\\garage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\garage\\garage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\garage\\garagevehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\garage\\garagevehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\energysources\\electricenergysource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\energysources\\electricenergysource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|c:\\users\\97254\\documents\\university\\third year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\c#\\ex3\\ex03 noa 212334114 amit 211924675\\ex03.garagelogic\\energysources\\energysource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{588994E1-CE58-07FF-7BCA-5D5E179EE98F}|Ex03.GarageLogic\\Ex03.GarageLogic.csproj|solutionrelative:ex03.garagelogic\\energysources\\energysource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +73,219 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VehiclesCreator.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Factory\\VehiclesCreator.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Factory\\VehiclesCreator.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Factory\\VehiclesCreator.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Factory\\VehiclesCreator.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:35:35.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FuelTruck.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\FuelTruck.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\FuelTruck.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\FuelTruck.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\FuelTruck.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:23:13.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ElectricMotorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\ElectricMotorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\ElectricMotorcycle.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\ElectricMotorcycle.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\ElectricMotorcycle.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:22:59.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FuelMotorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\FuelMotorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\FuelMotorcycle.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\FuelMotorcycle.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\FuelMotorcycle.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:22:22.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ElectricCar.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\ElectricCar.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\ElectricCar.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\ElectricCar.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\ElectricCar.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:22:08.399Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FuelCar.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\FuelCar.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\FuelCar.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\FuelCar.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\FuelCar.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:20:40.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehicleCreator.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\DN_2026B_Ex03\\VehicleCreator.cs",
+              "RelativeDocumentMoniker": "..\\DN_2026B_Ex03\\VehicleCreator.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\DN_2026B_Ex03\\VehicleCreator.cs",
+              "RelativeToolTip": "..\\DN_2026B_Ex03\\VehicleCreator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:16:23.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Garage.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Garage\\Garage.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Garage\\Garage.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Garage\\Garage.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Garage\\Garage.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADwvygAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:15:29.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GarageVehicle.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Garage\\GarageVehicle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Garage\\GarageVehicle.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Garage\\GarageVehicle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Garage\\GarageVehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:15:19.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Truck.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Truck.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\Truck.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Truck.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\Truck.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:13:43.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Motorcycle.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Motorcycle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\Motorcycle.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Motorcycle.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\Motorcycle.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:13:05.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Car.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\Car.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Car.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\Car.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:12:26.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Vehicle.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\Vehicles\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\Vehicles\\Vehicle.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\Vehicles\\Vehicle.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAADwvzsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:11:41.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ElectricEnergySource.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\EnergySources\\ElectricEnergySource.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\EnergySources\\ElectricEnergySource.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\EnergySources\\ElectricEnergySource.cs",
+              "RelativeToolTip": "Ex03.GarageLogic\\EnergySources\\ElectricEnergySource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:10:00.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FuelEnergySource.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\EnergySources\\FuelEnergySource.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\EnergySources\\FuelEnergySource.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\EnergySources\\FuelEnergySource.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\EnergySources\\FuelEnergySource.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:09:34.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EnergySource.cs",
+              "DocumentMoniker": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\EnergySources\\EnergySource.cs",
+              "RelativeDocumentMoniker": "Ex03.GarageLogic\\EnergySources\\EnergySource.cs",
+              "ToolTip": "C:\\Users\\97254\\Documents\\University\\Third Year\\\u05E1\u05DE\u05E1\u05D8\u05E8 \u05D1\\C#\\EX3\\Ex03 Noa 212334114 Amit 211924675\\Ex03.GarageLogic\\EnergySources\\EnergySource.cs*",
+              "RelativeToolTip": "Ex03.GarageLogic\\EnergySources\\EnergySource.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T15:08:54.185Z",
+              "EditorCaption": ""
             }
           ]
         }
