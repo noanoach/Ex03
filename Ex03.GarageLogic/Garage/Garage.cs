@@ -11,11 +11,6 @@ namespace Ex03.GarageLogic.Garage
         {
         }
 
-        public void LoadVehiclesFromFile(
-            string i_FilePath)
-        {
-        }
-
         public void AddVehicle(
             GarageVehicle i_GarageVehicle)
         {

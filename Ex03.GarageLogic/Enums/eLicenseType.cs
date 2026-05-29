@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Ex03.GarageLogic.Enums
 {
-    internal class eLicenseType
+    public enum eLicenseType
     {
+        A,
+        A2,
+        AB,
+        B1
     }
 }

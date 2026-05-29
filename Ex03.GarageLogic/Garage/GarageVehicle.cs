@@ -7,8 +7,8 @@ namespace Ex03.GarageLogic.Garage
     {
         private readonly Vehicle m_Vehicle;
 
-        private readonly string m_OwnerName;
-        private readonly string m_OwnerPhone;
+        private string m_OwnerName;
+        private string m_OwnerPhone;
 
         private eVehicleStatus m_Status;
 

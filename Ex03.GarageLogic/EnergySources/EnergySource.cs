@@ -1,4 +1,8 @@
-﻿namespace Ex03.GarageLogic.EnergySources
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Ex03.GarageLogic.EnergySources
 {
     public abstract class EnergySource
     {
@@ -33,8 +37,6 @@
             float i_CurrentAmount,
             float i_MaxAmount)
         {
-            m_CurrentAmount = i_CurrentAmount;
-            m_MaxAmount = i_MaxAmount;
         }
     }
 }
