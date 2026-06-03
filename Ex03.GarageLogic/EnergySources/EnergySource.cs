@@ -33,10 +33,18 @@ namespace Ex03.GarageLogic.EnergySources
             }
         }
 
-        protected EnergySource(
-            float i_CurrentAmount,
-            float i_MaxAmount)
+        protected EnergySource(float i_CurrentAmount, float i_MaxAmount)
         {
+            if(i_MaxAmount <= 0)
+            {
+                throw new ArgumentException("Max amount must be greater than zero.");
+            }
+            if(i_CurrentAmount < 0 || i_CurrentAmount > i_MaxAmount)
+            {
+                throw new ArgumentException("Current amount is out of bounds.");
+            }
+            m_CurrentAmount = i_CurrentAmount;
+            m_MaxAmount = i_MaxAmount;
         }
     }
 }
