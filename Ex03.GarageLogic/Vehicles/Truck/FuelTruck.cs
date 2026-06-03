@@ -1,11 +1,15 @@
-﻿using Ex03.GarageLogic.Enums;
+﻿using System;
+using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.EnergySources;
 
-namespace Ex03.GarageLogic.Vehicles.Truck.Truck
+namespace Ex03.GarageLogic.Vehicles
 {
     public class FuelTruck : Truck
     {
         private const float k_MaxFuelCapacity = 125f;
+
+        private const int k_NumberOfWheels = 14;
+        private const float k_MaxWheelPressure = 29f;
 
         public FuelTruck(
             string i_LicenseNumber,
@@ -18,6 +22,14 @@ namespace Ex03.GarageLogic.Vehicles.Truck.Truck
                 0,
                 k_MaxFuelCapacity,
                 eFuelType.Soler);
+        }
+
+        public override string GetVehicleInfo()
+        {
+            return
+                GetBaseVehicleInfo() +
+                Environment.NewLine +
+                GetTruckInfo();
         }
     }
 }
