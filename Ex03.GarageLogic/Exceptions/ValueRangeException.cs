@@ -25,6 +25,8 @@ namespace Ex03.GarageLogic.Exceptions
 
         public ValueRangeException(float i_MinValue, float i_MaxValue)
         {
+            m_MinValue = i_MinValue;
+            m_MaxValue = i_MaxValue;
         }
 
         public ValueRangeException(
@@ -33,6 +35,8 @@ namespace Ex03.GarageLogic.Exceptions
             float i_MaxValue)
             : base(i_Message)
         {
+            m_MinValue = i_MinValue;
+            m_MaxValue = i_MaxValue;
         }
     }
 }
