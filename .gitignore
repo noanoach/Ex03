@@ -1,3 +1,5 @@
 .vs/
+*.suo
+DocumentLayout.json
 bin/
 obj/
