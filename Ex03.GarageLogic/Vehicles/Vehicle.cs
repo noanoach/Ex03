@@ -45,6 +45,14 @@ namespace Ex03.GarageLogic.Vehicles
             }
         }
 
+        public float RemainingEnergyPercentage
+        {
+            get
+            {
+                return m_EnergySource.RemainingPercentage;
+            }
+        }
+
         protected Vehicle(
             string i_LicenseNumber,
             string i_ModelName)

@@ -1,29 +1,29 @@
 ﻿using Ex03.GarageLogic.Enums;
 
-namespace Ex03.GarageLogic.Vehicles
+namespace Ex03.GarageLogic.Vehicles.Motorcycle
 {
-    public abstract class Car : Vehicle
+    public abstract class Motorcycle : Vehicle
     {
-        protected eCarColor m_Color;
-        protected eDoorsAmount m_DoorsAmount;
+        protected eLicenseType m_LicenseType;
+        protected int m_EngineVolume;
 
-        public eCarColor Color
+        public eLicenseType LicenseType
         {
             get
             {
-                return m_Color;
+                return m_LicenseType;
             }
         }
 
-        public eDoorsAmount DoorsAmount
+        public int EngineVolume
         {
             get
             {
-                return m_DoorsAmount;
+                return m_EngineVolume;
             }
         }
 
-        protected Car(
+        protected Motorcycle(
             string i_LicenseNumber,
             string i_ModelName)
             : base(

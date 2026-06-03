@@ -1,7 +1,7 @@
 ﻿using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.EnergySources;
 
-namespace Ex03.GarageLogic.Vehicles
+namespace Ex03.GarageLogic.Vehicles.Car
 {
     public class FuelCar : Car
     {

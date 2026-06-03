@@ -1,6 +1,6 @@
 ﻿using Ex03.GarageLogic.EnergySources;
 
-namespace Ex03.GarageLogic.Vehicles
+namespace Ex03.GarageLogic.Vehicles.Motorcycle.Motorcycle
 {
     public class ElectricMotorcycle : Motorcycle
     {

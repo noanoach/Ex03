@@ -1,13 +1,13 @@
 ﻿using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.EnergySources;
 
-namespace Ex03.GarageLogic.Vehicles
+namespace Ex03.GarageLogic.Vehicles.Truck.Truck
 {
-    public class FuelMotorcycle : Motorcycle
+    public class FuelTruck : Truck
     {
-        private const float k_MaxFuelCapacity = 5.6f;
+        private const float k_MaxFuelCapacity = 125f;
 
-        public FuelMotorcycle(
+        public FuelTruck(
             string i_LicenseNumber,
             string i_ModelName)
             : base(
@@ -17,7 +17,7 @@ namespace Ex03.GarageLogic.Vehicles
             m_EnergySource = new FuelEnergySource(
                 0,
                 k_MaxFuelCapacity,
-                eFuelType.Octan98);
+                eFuelType.Soler);
         }
     }
 }
