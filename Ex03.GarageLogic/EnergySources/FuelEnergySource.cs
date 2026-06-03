@@ -1,4 +1,7 @@
 ﻿using Ex03.GarageLogic.Enums;
+using Ex03.GarageLogic.Exceptions;
+using System;
+
 
 namespace Ex03.GarageLogic.EnergySources
 {
@@ -22,12 +25,25 @@ namespace Ex03.GarageLogic.EnergySources
                 i_CurrentAmount,
                 i_MaxAmount)
         {
+            m_FuelType = i_FuelType;
         }
 
-        public void Refuel(
-            float i_FuelToAdd,
-            eFuelType i_FuelType)
+        public void Refuel(float i_FuelToAdd, eFuelType i_FuelType)
         {
+            if (i_FuelToAdd < 0)
+            {
+                throw new ArgumentOutOfRangeException("Fuel to add must be non-negative.");
+            }
+            if (i_FuelType != m_FuelType)
+            {
+                throw new ArgumentException("Wrong fuel type.");
+            }
+            if(CurrentAmount + i_FuelToAdd > MaxAmount)
+            {
+                throw new ValueRangeException("Fuel amount would exceed maximum capacity.", 0, MaxAmount - CurrentAmount);
+            }
+
+            m_CurrentAmount += i_FuelToAdd;
         }
     }
 }
