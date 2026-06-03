@@ -1,4 +1,7 @@
 ﻿using Ex03.GarageLogic.Enums;
+using Ex03.GarageLogic.Exceptions;
+using System;
+
 
 namespace Ex03.GarageLogic.EnergySources
 {
@@ -37,7 +40,7 @@ namespace Ex03.GarageLogic.EnergySources
             }
             if(CurrentAmount + i_FuelToAdd > MaxAmount)
             {
-                throw new ValueOutOfRangeException("Fuel amount would exceed maximum capacity.");
+                throw new ValueRangeException("Fuel amount would exceed maximum capacity.", 0, MaxAmount - CurrentAmount);
             }
 
             m_CurrentAmount += i_FuelToAdd;

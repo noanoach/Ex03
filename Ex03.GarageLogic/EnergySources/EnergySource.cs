@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Ex03.GarageLogic.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Text;
+
 
 namespace Ex03.GarageLogic.EnergySources
 {
@@ -45,6 +47,19 @@ namespace Ex03.GarageLogic.EnergySources
             }
             m_CurrentAmount = i_CurrentAmount;
             m_MaxAmount = i_MaxAmount;
+        }
+
+        public void SetRemainingPercentage(float i_Percentage)
+        {
+            if (i_Percentage < 0 || i_Percentage > 100)
+            {
+                throw new ValueRangeException(
+                    "Energy percentage must be between 0 and 100.",
+                    0,
+                    100);
+            }
+
+            m_CurrentAmount = m_MaxAmount * i_Percentage / 100f;
         }
     }
 }

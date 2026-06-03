@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Ex03.GarageLogic.Exceptions;
 
 namespace Ex03.GarageLogic.EnergySources
 {
@@ -19,7 +20,7 @@ namespace Ex03.GarageLogic.EnergySources
             }
             if (m_CurrentAmount + i_HoursToAdd > m_MaxAmount)
             {
-                throw new InvalidOperationException("Charging would exceed maximum capacity.");
+                throw new ValueRangeException("Charging would exceed maximum capacity.", 0, m_MaxAmount - m_CurrentAmount);
             }
 
             m_CurrentAmount += i_HoursToAdd;
