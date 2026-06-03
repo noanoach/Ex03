@@ -1,7 +1,7 @@
 ﻿using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.EnergySources;
 
-namespace Ex03.GarageLogic.Vehicles.Motorcycle.Motorcycle
+namespace Ex03.GarageLogic.Vehicles
 {
     public class FuelMotorcycle : Motorcycle
     {
@@ -9,10 +9,15 @@ namespace Ex03.GarageLogic.Vehicles.Motorcycle.Motorcycle
 
         public FuelMotorcycle(
             string i_LicenseNumber,
-            string i_ModelName)
+            string i_ModelName,
+            eLicenseType i_LicenseType,
+            int i_EngineVolume
+            )
             : base(
                 i_LicenseNumber,
-                i_ModelName)
+                i_ModelName,
+                i_LicenseType,
+                i_EngineVolume)
         {
             m_EnergySource = new FuelEnergySource(
                 0,

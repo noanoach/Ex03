@@ -1,6 +1,6 @@
 ﻿using Ex03.GarageLogic.Enums;
 
-namespace Ex03.GarageLogic.Vehicles.Motorcycle
+namespace Ex03.GarageLogic.Vehicles
 {
     public abstract class Motorcycle : Vehicle
     {
@@ -25,16 +25,30 @@ namespace Ex03.GarageLogic.Vehicles.Motorcycle
 
         protected Motorcycle(
             string i_LicenseNumber,
-            string i_ModelName)
+            string i_ModelName,
+            eLicenseType i_LicenseType,
+            int i_EngineVolume)
             : base(
                 i_LicenseNumber,
                 i_ModelName)
         {
+            m_LicenseType = i_LicenseType;
+            m_EngineVolume = i_EngineVolume;
         }
 
         public override string GetVehicleInfo()
         {
-            return string.Empty;
+            return
+                GetBaseVehicleInfo() +
+                Environment.NewLine +
+                GetMotorcycleInfo();
+        }
+
+        protected string GetMotorcycleInfo()
+        {
+            return
+                $"License Type: {m_LicenseType}{Environment.NewLine}" +
+                $"Engine Volume: {m_EngineVolume} cc";
         }
     }
 }
