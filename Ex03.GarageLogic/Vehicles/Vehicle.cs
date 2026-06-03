@@ -64,5 +64,13 @@ namespace Ex03.GarageLogic.Vehicles
         }
 
         public abstract string GetVehicleInfo();
+
+        protected string GetBaseVehicleInfo()
+        {
+            return
+                $"License Number: {m_LicenseNumber}{Environment.NewLine}" +
+                $"Model Name: {m_ModelName}{Environment.NewLine}" +
+                $"Remaining Energy: {RemainingEnergyPercentage:F1}%";
+        }
     }
 }

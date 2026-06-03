@@ -1,10 +1,14 @@
-﻿using Ex03.GarageLogic.EnergySources;
+﻿using System;
+using Ex03.GarageLogic.EnergySources;
 
 namespace Ex03.GarageLogic.Vehicles.Car
 {
     public class ElectricCar : Car
     {
         private const float k_MaxBatteryHours = 4.6f;
+
+        private const int k_NumberOfWheels = 5;
+        private const float k_MaxWheelPressure = 31f;
 
         public ElectricCar(
             string i_LicenseNumber,
@@ -16,6 +20,14 @@ namespace Ex03.GarageLogic.Vehicles.Car
             m_EnergySource = new ElectricEnergySource(
                 0,
                 k_MaxBatteryHours);
+        }
+
+        public override string GetVehicleInfo()
+        {
+            return
+                GetBaseVehicleInfo() +
+                Environment.NewLine +
+                GetCarInfo();
         }
     }
 }

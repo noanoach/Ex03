@@ -7,6 +7,9 @@ namespace Ex03.GarageLogic.Vehicles.Car
     {
         private const float k_MaxFuelCapacity = 51f;
 
+        private const int k_NumberOfWheels = 5;
+        private const float k_MaxWheelPressure = 31f;
+
         public FuelCar(
             string i_LicenseNumber,
             string i_ModelName)
