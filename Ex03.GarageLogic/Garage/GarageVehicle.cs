@@ -7,8 +7,8 @@ namespace Ex03.GarageLogic.Garage
     {
         private readonly Vehicle m_Vehicle;
 
-        private string m_OwnerName;
-        private string m_OwnerPhone;
+        private readonly string m_OwnerName;
+        private readonly string m_OwnerPhone;
 
         private eVehicleStatus m_Status;
 
@@ -53,6 +53,11 @@ namespace Ex03.GarageLogic.Garage
             string i_OwnerName,
             string i_OwnerPhone)
         {
+            m_Vehicle = i_Vehicle;
+            m_OwnerName = i_OwnerName;
+            m_OwnerPhone = i_OwnerPhone;
+
+            m_Status = eVehicleStatus.InRepair;
         }
     }
 }
