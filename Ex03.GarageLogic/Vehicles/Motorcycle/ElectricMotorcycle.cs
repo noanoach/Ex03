@@ -1,5 +1,5 @@
-﻿using Ex03.GarageLogic.EnergySources;
-using Ex03.GarageLogic.Enums;
+﻿using System;
+using Ex03.GarageLogic.EnergySources;
 
 namespace Ex03.GarageLogic.Vehicles
 {
@@ -7,21 +7,27 @@ namespace Ex03.GarageLogic.Vehicles
     {
         private const float k_MaxBatteryHours = 3.0f;
 
+        private const int k_NumberOfWheels = 2;
+        private const float k_MaxWheelPressure = 33f;
+
         public ElectricMotorcycle(
             string i_LicenseNumber,
-            string i_ModelName,
-            eLicenseType i_LicenseType,
-            int i_EngineVolume)
+            string i_ModelName)
             : base(
                 i_LicenseNumber,
-                i_ModelName,
-                i_LicenseType,
-                i_EngineVolume
-                )
+                i_ModelName)
         {
             m_EnergySource = new ElectricEnergySource(
                 0,
                 k_MaxBatteryHours);
+        }
+
+        public override string GetVehicleInfo()
+        {
+            return
+                GetBaseVehicleInfo() +
+                Environment.NewLine +
+                GetMotorcycleInfo();
         }
     }
 }

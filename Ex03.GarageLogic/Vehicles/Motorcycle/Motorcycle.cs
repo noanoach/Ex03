@@ -25,29 +25,17 @@ namespace Ex03.GarageLogic.Vehicles
 
         protected Motorcycle(
             string i_LicenseNumber,
-            string i_ModelName,
-            eLicenseType i_LicenseType,
-            int i_EngineVolume)
+            string i_ModelName)
             : base(
                 i_LicenseNumber,
                 i_ModelName)
         {
-            m_LicenseType = i_LicenseType;
-            m_EngineVolume = i_EngineVolume;
-        }
-
-        public override string GetVehicleInfo()
-        {
-            return
-                GetBaseVehicleInfo() +
-                Environment.NewLine +
-                GetMotorcycleInfo();
         }
 
         protected string GetMotorcycleInfo()
         {
             return
-                $"License Type: {m_LicenseType}{Environment.NewLine}" +
+                $"License Type: {m_LicenseType}{System.Environment.NewLine}" +
                 $"Engine Volume: {m_EngineVolume} cc";
         }
     }
