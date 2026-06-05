@@ -1,4 +1,5 @@
 ﻿using Ex03.GarageLogic.Vehicles;
+using Ex03.GarageLogic.Vehicles.Car;
 using System.Collections.Generic;
 
 namespace Ex03.GarageLogic
@@ -7,7 +8,7 @@ namespace Ex03.GarageLogic
     {
         public static Vehicle CreateVehicle(string i_VehicleType, string i_LicenseID, string i_ModelName)
         {
-            Vehicle newVehicle = null;
+            Vehicle newVehicle;
 
             switch (i_VehicleType)
             {
@@ -26,6 +27,8 @@ namespace Ex03.GarageLogic
                 case "FuelTruck":
                     newVehicle = new FuelTruck(i_LicenseID, i_ModelName);
                     break;
+                default:
+                    throw new ArgumentException("Unsupported vehicle type.");
             }
 
             return newVehicle;
