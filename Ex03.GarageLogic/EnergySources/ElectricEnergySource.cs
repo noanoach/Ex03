@@ -14,7 +14,7 @@ namespace Ex03.GarageLogic.EnergySources
         {
             if (i_HoursToAdd <= 0)
             {
-                throw new ArgumentOutOfRangeException("Hours to add must be positive.");
+                throw new ArgumentException("Hours to add must be positive.");
             }
             if (m_CurrentAmount + i_HoursToAdd > m_MaxAmount)
             {

@@ -41,7 +41,7 @@ namespace Ex03.GarageLogic.EnergySources
             }
             if(i_CurrentAmount < 0 || i_CurrentAmount > i_MaxAmount)
             {
-                throw new ArgumentException("Current amount is out of bounds.");
+                throw new ValueRangeException("Current amount is out of bounds.", 0, i_MaxAmount);
             }
             m_CurrentAmount = i_CurrentAmount;
             m_MaxAmount = i_MaxAmount;
