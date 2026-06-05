@@ -32,7 +32,7 @@ namespace Ex03.GarageLogic.EnergySources
         {
             if (i_FuelToAdd < 0)
             {
-                throw new ArgumentOutOfRangeException("Fuel to add must be non-negative.");
+                throw new ValueRangeException("Fuel amount must be positive.", 0, MaxAmount - CurrentAmount);
             }
             if (i_FuelType != m_FuelType)
             {

@@ -4,9 +4,9 @@ namespace Ex03.ConsoleUI.UI
 {
     public static class VehiclePrinter
     {
-        public static void PrintVehicleDetails(
-            Vehicle i_Vehicle)
+        public static void PrintVehicleDetails(Vehicle i_Vehicle)
         {
+            Console.WriteLine(i_Vehicle.GetVehicleInfo());
         }
     }
 }
