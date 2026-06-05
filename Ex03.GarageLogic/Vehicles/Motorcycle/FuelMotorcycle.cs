@@ -1,4 +1,5 @@
-﻿using Ex03.GarageLogic.Enums;
+﻿using System;
+using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.EnergySources;
 
 namespace Ex03.GarageLogic.Vehicles
@@ -9,20 +10,26 @@ namespace Ex03.GarageLogic.Vehicles
 
         public FuelMotorcycle(
             string i_LicenseNumber,
-            string i_ModelName,
-            eLicenseType i_LicenseType,
-            int i_EngineVolume
-            )
+            string i_ModelName)
             : base(
                 i_LicenseNumber,
-                i_ModelName,
-                i_LicenseType,
-                i_EngineVolume)
+                i_ModelName)
         {
+            m_NumberOfWheels = 2;
+            m_MaxWheelPressure = 30f;
+
             m_EnergySource = new FuelEnergySource(
                 0,
                 k_MaxFuelCapacity,
                 eFuelType.Octan98);
+        }
+
+        public override string GetVehicleInfo()
+        {
+            return
+                GetBaseVehicleInfo() +
+                Environment.NewLine +
+                GetMotorcycleInfo();
         }
     }
 }

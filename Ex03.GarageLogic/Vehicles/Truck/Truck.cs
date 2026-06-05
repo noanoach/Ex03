@@ -1,17 +1,17 @@
 ﻿using System;
 
-namespace Ex03.GarageLogic.Vehicles.Truck
+namespace Ex03.GarageLogic.Vehicles
 {
     public abstract class Truck : Vehicle
     {
-        protected bool m_ContainsDangerousMaterials;
+        protected bool m_IsCoolingCargo;
         protected float m_CargoVolume;
 
-        public bool ContainsDangerousMaterials
+        public bool IsCoolingCargo
         {
             get
             {
-                return m_ContainsDangerousMaterials;
+                return m_IsCoolingCargo;
             }
         }
 
@@ -32,11 +32,20 @@ namespace Ex03.GarageLogic.Vehicles.Truck
         {
         }
 
+        public void InitializeTruckDetails(
+            bool i_IsCoolingCargo,
+            float i_CargoVolume)
+        {
+            m_IsCoolingCargo = i_IsCoolingCargo;
+            m_CargoVolume = i_CargoVolume;
+        }
+
         protected string GetTruckInfo()
         {
             return
-                $"Dangerous Materials: {m_ContainsDangerousMaterials}{Environment.NewLine}" +
+                $"Cooling Cargo: {m_IsCoolingCargo}{Environment.NewLine}" +
                 $"Cargo Volume: {m_CargoVolume}";
         }
     }
 }
+

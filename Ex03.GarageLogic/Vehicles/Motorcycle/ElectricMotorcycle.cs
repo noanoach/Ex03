@@ -15,7 +15,7 @@ namespace Ex03.GarageLogic.Vehicles
                 i_ModelName)
         {
             m_NumberOfWheels = 2;
-            m_MaxWheelPressure = 33f;
+            m_MaxWheelPressure = 30f;
 
             m_EnergySource = new ElectricEnergySource(
                 0,

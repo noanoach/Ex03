@@ -2,9 +2,11 @@
 using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.Garage;
 using Ex03.GarageLogic.Vehicles;
+using Ex03.GarageLogic.Vehicles.Car;
 using System;
 using System.Collections.Generic;
 using System.Text;
+
 
 namespace Ex03.GarageLogic.FileLoader
 {
@@ -46,14 +48,13 @@ namespace Ex03.GarageLogic.FileLoader
 
         private static void InitializeVehicleSpecificDetails(Vehicle i_Vehicle, string[] i_Fields)
         {
-            if (i_Vehicle is Vehicles.Car.Car car)
+            if (i_Vehicle is Car car)
             {
                 car.InitializeCarDetails((eCarColor)Enum.Parse(typeof(eCarColor), i_Fields[8]), (eDoorsAmount)int.Parse(i_Fields[9]));
             }
             else if (i_Vehicle is Motorcycle motorcycle)
             {
-                motorcycle.InitializeMotorcycleDetails(
-                    (eLicenseType)Enum.Parse(typeof(eLicenseType), i_Fields[8]), int.Parse(i_Fields[9]));
+                motorcycle.InitializeMotorcycleDetails((eLicenseType)Enum.Parse(typeof(eLicenseType), i_Fields[8]), int.Parse(i_Fields[9]));
             }
             else if (i_Vehicle is Truck truck)
             {
