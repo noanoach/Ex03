@@ -59,5 +59,15 @@ namespace Ex03.GarageLogic.Garage
 
             m_Status = eVehicleStatus.InRepair;
         }
+
+
+        public string GetGarageVehicleInfo()
+        {
+            return
+                $"Owner Name: {m_OwnerName}{Environment.NewLine}" +
+                $"Owner Phone: {m_OwnerPhone}{Environment.NewLine}" +
+                $"Status: {m_Status}{Environment.NewLine}" +
+                m_Vehicle.GetVehicleInfo();
+        }
     }
 }
