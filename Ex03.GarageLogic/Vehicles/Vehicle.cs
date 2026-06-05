@@ -13,7 +13,7 @@ namespace Ex03.GarageLogic.Vehicles
 
         protected readonly List<Wheel> m_Wheels;
 
-        protected EnergySource m_EnergySource;
+        protected EnergySource? m_EnergySource;
 
         public string ModelName
         {
@@ -59,7 +59,7 @@ namespace Ex03.GarageLogic.Vehicles
         {
             get
             {
-                return m_EnergySource;
+                return m_EnergySource!;
             }
         }
 
@@ -67,7 +67,7 @@ namespace Ex03.GarageLogic.Vehicles
         {
             get
             {
-                return m_EnergySource.RemainingPercentage;
+                return m_EnergySource!.RemainingPercentage;
             }
         }
 

@@ -12,9 +12,9 @@ namespace Ex03.GarageLogic.EnergySources
 
         public void Charge(float i_HoursToAdd)
         {
-            if (i_HoursToAdd < 0)
+            if (i_HoursToAdd <= 0)
             {
-                throw new ArgumentOutOfRangeException("Hours to add must be non-negative.");
+                throw new ArgumentOutOfRangeException("Hours to add must be positive.");
             }
             if (m_CurrentAmount + i_HoursToAdd > m_MaxAmount)
             {

@@ -7,9 +7,6 @@ namespace Ex03.GarageLogic.Vehicles.Car
     {
         private const float k_MaxBatteryHours = 4.6f;
 
-        k_NumberOfWheels = 5;
-        private const float k_MaxWheelPressure = 31f;
-
         public ElectricCar(
             string i_LicenseNumber,
             string i_ModelName)

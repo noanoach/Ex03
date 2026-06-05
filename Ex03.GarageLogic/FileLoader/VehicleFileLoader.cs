@@ -10,21 +10,17 @@ namespace Ex03.GarageLogic.FileLoader
 {
     internal static class VehicleFileLoader
     {
-        public static List<GarageVehicle> LoadVehicles(
-            string i_FilePath)
+        public static List<GarageVehicle> LoadVehicles(string i_FilePath)
         {
-            List<GarageVehicle> vehicles =
-                new List<GarageVehicle>();
+            List<GarageVehicle> vehicles = new List<GarageVehicle>();
 
-            string[] lines =
-                File.ReadAllLines(i_FilePath);
+            string[] lines = File.ReadAllLines(i_FilePath);
 
             foreach (string line in lines)
             {
                 if (!string.IsNullOrWhiteSpace(line))
                 {
-                    vehicles.Add(
-                        ParseVehicle(line));
+                    vehicles.Add(ParseVehicle(line));
                 }
             }
 
@@ -65,19 +61,13 @@ namespace Ex03.GarageLogic.FileLoader
             }
         }
 
-        private static void InitializeVehicleEnergy(
-            Vehicle i_Vehicle,
-            float i_EnergyPercentage)
+        private static void InitializeVehicleEnergy(Vehicle i_Vehicle, float i_EnergyPercentage)
         {
             i_Vehicle.EnergySource.SetRemainingPercentage(i_EnergyPercentage);
         }
 
-        private static void InitializeVehicleWheels(
-            Vehicle i_Vehicle,
-            string i_ManufacturerName,
-            float i_CurrentPressure)
+        private static void InitializeVehicleWheels(Vehicle i_Vehicle, string i_ManufacturerName, float i_CurrentPressure)
         {
-
             for (int i = 0; i < i_Vehicle.NumberOfWheels; i++)
             {
                 i_Vehicle.AddWheel(new Wheel(i_ManufacturerName, i_CurrentPressure, i_Vehicle.MaxWheelPressure));
