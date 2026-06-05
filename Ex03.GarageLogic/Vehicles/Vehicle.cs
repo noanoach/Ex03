@@ -8,6 +8,8 @@ namespace Ex03.GarageLogic.Vehicles
     {
         protected string m_ModelName;
         protected string m_LicenseNumber;
+        protected int m_NumberOfWheels;
+        protected float m_MaxWheelPressure;
 
         protected readonly List<Wheel> m_Wheels;
 
@@ -26,6 +28,22 @@ namespace Ex03.GarageLogic.Vehicles
             get
             {
                 return m_LicenseNumber;
+            }
+        }
+
+        public int NumberOfWheels
+        {
+            get
+            {
+                return m_NumberOfWheels;
+            }
+        }
+
+        public float MaxWheelPressure
+        {
+            get
+            {
+                return m_MaxWheelPressure;
             }
         }
 
@@ -53,6 +71,8 @@ namespace Ex03.GarageLogic.Vehicles
             }
         }
 
+        
+
         protected Vehicle(
             string i_LicenseNumber,
             string i_ModelName)
@@ -71,6 +91,12 @@ namespace Ex03.GarageLogic.Vehicles
                 $"License Number: {m_LicenseNumber}{Environment.NewLine}" +
                 $"Model Name: {m_ModelName}{Environment.NewLine}" +
                 $"Remaining Energy: {RemainingEnergyPercentage:F1}%";
+        }
+
+        public void AddWheel(
+            Wheel i_Wheel)
+        {
+            m_Wheels.Add(i_Wheel);
         }
     }
 }

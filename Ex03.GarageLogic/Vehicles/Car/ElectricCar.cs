@@ -7,7 +7,7 @@ namespace Ex03.GarageLogic.Vehicles.Car
     {
         private const float k_MaxBatteryHours = 4.6f;
 
-        private const int k_NumberOfWheels = 5;
+        k_NumberOfWheels = 5;
         private const float k_MaxWheelPressure = 31f;
 
         public ElectricCar(
@@ -17,6 +17,9 @@ namespace Ex03.GarageLogic.Vehicles.Car
                 i_LicenseNumber,
                 i_ModelName)
         {
+            m_NumberOfWheels = 5;
+            m_MaxWheelPressure = 31f;
+
             m_EnergySource = new ElectricEnergySource(
                 0,
                 k_MaxBatteryHours);

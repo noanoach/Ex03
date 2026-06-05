@@ -8,9 +8,6 @@ namespace Ex03.GarageLogic.Vehicles
     {
         private const float k_MaxFuelCapacity = 125f;
 
-        private const int k_NumberOfWheels = 14;
-        private const float k_MaxWheelPressure = 29f;
-
         public FuelTruck(
             string i_LicenseNumber,
             string i_ModelName)
@@ -18,6 +15,9 @@ namespace Ex03.GarageLogic.Vehicles
                 i_LicenseNumber,
                 i_ModelName)
         {
+            m_NumberOfWheels = 14;
+            m_MaxWheelPressure = 29f;
+
             m_EnergySource = new FuelEnergySource(
                 0,
                 k_MaxFuelCapacity,

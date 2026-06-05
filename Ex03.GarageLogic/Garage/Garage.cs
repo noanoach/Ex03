@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Ex03.GarageLogic.Components;
+using Ex03.GarageLogic.EnergySources;
 using Ex03.GarageLogic.Enums;
 
 namespace Ex03.GarageLogic.Garage
@@ -65,9 +68,15 @@ namespace Ex03.GarageLogic.Garage
                 i_NewStatus;
         }
 
-        public void InflateVehicleWheelsToMax(
-            string i_LicenseNumber)
+        public void InflateVehicleWheelsToMax(string i_LicenseNumber)
         {
+            GarageVehicle garageVehicle =
+            m_Vehicles[i_LicenseNumber];
+
+            foreach (var wheel in garageVehicle.Vehicle.Wheels)
+            {
+                wheel.InflateToMax();
+            }
         }
 
         public void RefuelVehicle(
@@ -75,18 +84,35 @@ namespace Ex03.GarageLogic.Garage
             eFuelType i_FuelType,
             float i_FuelAmount)
         {
+            FuelEnergySource? fuelEnergySource = m_Vehicles[i_LicenseNumber].Vehicle.EnergySource as FuelEnergySource;
+
+            if (fuelEnergySource == null)
+            {
+                throw new ArgumentException("Vehicle is not fuel based.");
+            }
+
+            fuelEnergySource.Refuel(
+                i_FuelAmount,
+                i_FuelType);
         }
 
         public void ChargeVehicle(
             string i_LicenseNumber,
             float i_HoursToAdd)
         {
+            ElectricEnergySource? electricEnergySource = m_Vehicles[i_LicenseNumber].Vehicle.EnergySource as ElectricEnergySource;
+
+            if (electricEnergySource == null)
+            {
+                throw new ArgumentException("Vehicle is not electric.");
+            }
+
+            electricEnergySource.Charge(i_HoursToAdd);
         }
 
-        public string GetVehicleDetails(
-            string i_LicenseNumber)
+        public string GetVehicleDetails (string i_LicenseNumber)
         {
-            return string.Empty;
+            return m_Vehicles[i_LicenseNumber].GetGarageVehicleInfo();
         }
     }
 }

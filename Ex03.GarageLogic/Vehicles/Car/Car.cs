@@ -32,9 +32,19 @@ namespace Ex03.GarageLogic.Vehicles.Car
         {
         }
 
-        public override string GetVehicleInfo()
+        public void InitializeCarDetails(
+            eCarColor i_Color,
+            eDoorsAmount i_DoorsAmount)
         {
-            return string.Empty;
+            m_Color = i_Color;
+            m_DoorsAmount = i_DoorsAmount;
+        }
+
+        protected string GetCarInfo()
+        {
+            return
+                $"Color: {m_Color}{Environment.NewLine}" +
+                $"Doors: {(int)m_DoorsAmount}";
         }
     }
 }

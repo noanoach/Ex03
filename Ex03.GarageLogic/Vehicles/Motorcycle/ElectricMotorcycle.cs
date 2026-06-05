@@ -7,9 +7,6 @@ namespace Ex03.GarageLogic.Vehicles
     {
         private const float k_MaxBatteryHours = 3.0f;
 
-        private const int k_NumberOfWheels = 2;
-        private const float k_MaxWheelPressure = 33f;
-
         public ElectricMotorcycle(
             string i_LicenseNumber,
             string i_ModelName)
@@ -17,6 +14,9 @@ namespace Ex03.GarageLogic.Vehicles
                 i_LicenseNumber,
                 i_ModelName)
         {
+            m_NumberOfWheels = 2;
+            m_MaxWheelPressure = 33f;
+
             m_EnergySource = new ElectricEnergySource(
                 0,
                 k_MaxBatteryHours);

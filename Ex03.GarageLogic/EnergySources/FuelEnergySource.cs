@@ -30,9 +30,9 @@ namespace Ex03.GarageLogic.EnergySources
 
         public void Refuel(float i_FuelToAdd, eFuelType i_FuelType)
         {
-            if (i_FuelToAdd < 0)
+            if (i_FuelToAdd <= 0)
             {
-                throw new ArgumentOutOfRangeException("Fuel to add must be non-negative.");
+                throw new ArgumentOutOfRangeException("Fuel to add must be positive.");
             }
             if (i_FuelType != m_FuelType)
             {

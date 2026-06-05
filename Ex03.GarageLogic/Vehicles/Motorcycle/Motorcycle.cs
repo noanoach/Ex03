@@ -32,6 +32,14 @@ namespace Ex03.GarageLogic.Vehicles
         {
         }
 
+        public void InitializeMotorcycleDetails(
+            eLicenseType i_LicenseType,
+            int i_EngineVolume)
+        {
+            m_LicenseType = i_LicenseType;
+            m_EngineVolume = i_EngineVolume;
+        }
+
         protected string GetMotorcycleInfo()
         {
             return
