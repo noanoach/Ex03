@@ -5,15 +5,15 @@ namespace Ex03.GarageLogic.Components
 {
     public class Wheel
     {
-        private readonly string m_ManufacturerName;
+        private readonly string r_ManufacturerName;
         private float m_CurrentAirPressure;
-        private readonly float m_MaxAirPressure;
+        private readonly float r_MaxAirPressure;
 
         public string ManufacturerName
         {
             get
             {
-                return m_ManufacturerName;
+                return r_ManufacturerName;
             }
         }
 
@@ -29,7 +29,7 @@ namespace Ex03.GarageLogic.Components
         {
             get
             {
-                return m_MaxAirPressure;
+                return r_MaxAirPressure;
             }
         }
 
@@ -40,12 +40,14 @@ namespace Ex03.GarageLogic.Components
         {
             if (i_CurrentAirPressure < 0 || i_CurrentAirPressure > i_MaxAirPressure)
             {
-                throw new ValueRangeException(0, i_MaxAirPressure);
+                throw new ValueRangeException(
+                    0,
+                    i_MaxAirPressure);
             }
 
-            m_ManufacturerName = i_ManufacturerName;
+            r_ManufacturerName = i_ManufacturerName;
             m_CurrentAirPressure = i_CurrentAirPressure;
-            m_MaxAirPressure = i_MaxAirPressure;
+            r_MaxAirPressure = i_MaxAirPressure;
         }
 
         public void Inflate(float i_AirToAdd)
@@ -55,9 +57,11 @@ namespace Ex03.GarageLogic.Components
                 throw new ArgumentException("Air amount must be positive.");
             }
 
-            if (m_CurrentAirPressure + i_AirToAdd > m_MaxAirPressure)
+            if (m_CurrentAirPressure + i_AirToAdd > r_MaxAirPressure)
             {
-                throw new ValueRangeException(0, m_MaxAirPressure);
+                throw new ValueRangeException(
+                    0,
+                    r_MaxAirPressure);
             }
 
             m_CurrentAirPressure += i_AirToAdd;
@@ -65,7 +69,7 @@ namespace Ex03.GarageLogic.Components
 
         public void InflateToMax()
         {
-            m_CurrentAirPressure = m_MaxAirPressure;
+            m_CurrentAirPressure = r_MaxAirPressure;
         }
     }
 }

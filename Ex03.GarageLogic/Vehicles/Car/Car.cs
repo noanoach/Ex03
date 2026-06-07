@@ -1,4 +1,5 @@
-﻿using Ex03.GarageLogic.Enums;
+﻿using System;
+using Ex03.GarageLogic.Enums;
 
 namespace Ex03.GarageLogic.Vehicles.Car
 {
@@ -40,9 +41,11 @@ namespace Ex03.GarageLogic.Vehicles.Car
 
         protected string GetCarInfo()
         {
-            return
+            string carInfo =
                 $"Color: {m_Color}{Environment.NewLine}" +
                 $"Doors: {(int)m_DoorsAmount}";
+
+            return carInfo;
         }
     }
 }

@@ -1,21 +1,21 @@
-﻿using Ex03.GarageLogic.Enums;
+﻿using System;
+using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.Vehicles;
 
 namespace Ex03.GarageLogic.Garage
 {
     public class GarageVehicle
     {
-        private readonly Vehicle m_Vehicle;
-
-        private readonly string m_OwnerName;
-        private readonly string m_OwnerPhone;
+        private readonly Vehicle r_Vehicle;
+        private readonly string r_OwnerName;
+        private readonly string r_OwnerPhone;
         private eVehicleStatus m_Status;
 
         public Vehicle Vehicle
         {
             get
             {
-                return m_Vehicle;
+                return r_Vehicle;
             }
         }
 
@@ -23,7 +23,7 @@ namespace Ex03.GarageLogic.Garage
         {
             get
             {
-                return m_OwnerName;
+                return r_OwnerName;
             }
         }
 
@@ -31,7 +31,7 @@ namespace Ex03.GarageLogic.Garage
         {
             get
             {
-                return m_OwnerPhone;
+                return r_OwnerPhone;
             }
         }
 
@@ -52,21 +52,22 @@ namespace Ex03.GarageLogic.Garage
             string i_OwnerName,
             string i_OwnerPhone)
         {
-            m_Vehicle = i_Vehicle;
-            m_OwnerName = i_OwnerName;
-            m_OwnerPhone = i_OwnerPhone;
+            r_Vehicle = i_Vehicle;
+            r_OwnerName = i_OwnerName;
+            r_OwnerPhone = i_OwnerPhone;
 
             m_Status = eVehicleStatus.InRepair;
         }
 
-
         public string GetGarageVehicleInfo()
         {
-            return
-                $"Owner Name: {m_OwnerName}{Environment.NewLine}" +
-                $"Owner Phone: {m_OwnerPhone}{Environment.NewLine}" +
+            string garageVehicleInfo =
+                $"Owner Name: {r_OwnerName}{Environment.NewLine}" +
+                $"Owner Phone: {r_OwnerPhone}{Environment.NewLine}" +
                 $"Status: {m_Status}{Environment.NewLine}" +
-                m_Vehicle.GetVehicleInfo();
+                r_Vehicle.GetVehicleInfo();
+
+            return garageVehicleInfo;
         }
     }
 }
