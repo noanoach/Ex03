@@ -1,6 +1,5 @@
-﻿using Ex03.GarageLogic.Exceptions;
-using System;
-
+﻿using System;
+using Ex03.GarageLogic.Exceptions;
 
 namespace Ex03.GarageLogic.EnergySources
 {
@@ -29,20 +28,24 @@ namespace Ex03.GarageLogic.EnergySources
         {
             get
             {
-                return (m_CurrentAmount / m_MaxAmount) * 100f;
+                float remainingPercentage = (m_CurrentAmount / m_MaxAmount) * 100f;
+
+                return remainingPercentage;
             }
         }
 
         protected EnergySource(float i_CurrentAmount, float i_MaxAmount)
         {
-            if(i_MaxAmount <= 0)
+            if (i_MaxAmount <= 0)
             {
                 throw new ArgumentException("Max amount must be greater than zero.");
             }
-            if(i_CurrentAmount < 0 || i_CurrentAmount > i_MaxAmount)
+
+            if (i_CurrentAmount < 0 || i_CurrentAmount > i_MaxAmount)
             {
                 throw new ValueRangeException("Current amount is out of bounds.", 0, i_MaxAmount);
             }
+
             m_CurrentAmount = i_CurrentAmount;
             m_MaxAmount = i_MaxAmount;
         }

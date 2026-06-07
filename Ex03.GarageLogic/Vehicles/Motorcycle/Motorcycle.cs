@@ -42,9 +42,11 @@ namespace Ex03.GarageLogic.Vehicles
 
         protected string GetMotorcycleInfo()
         {
-            return
+            string motorcycleInfo =
                 $"License Type: {m_LicenseType}{System.Environment.NewLine}" +
                 $"Engine Volume: {m_EngineVolume} cc";
+
+            return motorcycleInfo;
         }
     }
 }

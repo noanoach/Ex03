@@ -16,9 +16,13 @@ namespace Ex03.GarageLogic.EnergySources
             {
                 throw new ArgumentException("Hours to add must be positive.");
             }
+
             if (m_CurrentAmount + i_HoursToAdd > m_MaxAmount)
             {
-                throw new ValueRangeException("Charging would exceed maximum capacity.", 0, m_MaxAmount - m_CurrentAmount);
+                throw new ValueRangeException(
+                    "Charging would exceed maximum capacity.",
+                    0,
+                    m_MaxAmount - m_CurrentAmount);
             }
 
             m_CurrentAmount += i_HoursToAdd;
@@ -26,9 +30,11 @@ namespace Ex03.GarageLogic.EnergySources
 
         public string GetElectricInfo()
         {
-            return
+            string electricInfo =
                 $"Current Battery Time: {CurrentAmount}{Environment.NewLine}" +
                 $"Max Battery Time: {MaxAmount}";
+
+            return electricInfo;
         }
     }
 }

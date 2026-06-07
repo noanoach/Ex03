@@ -22,10 +22,12 @@ namespace Ex03.GarageLogic.Vehicles
 
         public override string GetVehicleInfo()
         {
-            return
+            string vehicleInfo =
                 GetBaseVehicleInfo() +
                 Environment.NewLine +
                 GetMotorcycleInfo();
+
+            return vehicleInfo;
         }
     }
 }

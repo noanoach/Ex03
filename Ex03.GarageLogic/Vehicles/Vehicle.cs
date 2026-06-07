@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Ex03.GarageLogic.Components;
 using Ex03.GarageLogic.EnergySources;
 
@@ -9,12 +10,9 @@ namespace Ex03.GarageLogic.Vehicles
         protected string m_ModelName;
         protected string m_LicenseNumber;
         protected EnergySource? m_EnergySource;
-        protected readonly List<Wheel> m_Wheels;
-
+        protected readonly List<Wheel> r_Wheels;
         protected int m_NumberOfWheels;
         protected float m_MaxWheelPressure;
-        
-        
 
         public string ModelName
         {
@@ -52,7 +50,7 @@ namespace Ex03.GarageLogic.Vehicles
         {
             get
             {
-                return m_Wheels;
+                return r_Wheels;
             }
         }
 
@@ -72,67 +70,72 @@ namespace Ex03.GarageLogic.Vehicles
             }
         }
 
-<<<<<<< HEAD
-       
         protected Vehicle(string i_LicenseNumber, string i_ModelName)
-=======
-        protected Vehicle(
-            string i_LicenseNumber,
-            string i_ModelName)
->>>>>>> b7b5a5929ad36ed173ab4c4c1aee269894a5e023
         {
             m_LicenseNumber = i_LicenseNumber;
             m_ModelName = i_ModelName;
-            m_Wheels = new List<Wheel>();
+            r_Wheels = new List<Wheel>();
         }
 
         public abstract string GetVehicleInfo();
 
         protected string GetBaseVehicleInfo()
         {
-            return
+            string baseVehicleInfo =
                 $"License Number: {m_LicenseNumber}{Environment.NewLine}" +
                 $"Model Name: {m_ModelName}{Environment.NewLine}" +
                 $"Remaining Energy: {RemainingEnergyPercentage:F1}%{Environment.NewLine}" +
                 getWheelsInfo() + Environment.NewLine +
                 getEnergySourceInfo();
+
+            return baseVehicleInfo;
         }
 
         private string getWheelsInfo()
         {
-            if (m_Wheels.Count == 0)
+            string wheelsInfo;
+
+            if (r_Wheels.Count == 0)
             {
-                return "Wheels: No wheels information";
+                wheelsInfo = "Wheels: No wheels information";
+            }
+            else
+            {
+                Wheel firstWheel = r_Wheels[0];
+
+                wheelsInfo =
+                    $"Wheels Amount: {r_Wheels.Count}{Environment.NewLine}" +
+                    $"Wheel Manufacturer: {firstWheel.ManufacturerName}{Environment.NewLine}" +
+                    $"Current Wheel Pressure: {firstWheel.CurrentAirPressure}{Environment.NewLine}" +
+                    $"Max Wheel Pressure: {firstWheel.MaxAirPressure}";
             }
 
-            Wheel firstWheel = m_Wheels[0];
-
-            return
-                $"Wheels Amount: {m_Wheels.Count}{Environment.NewLine}" +
-                $"Wheel Manufacturer: {firstWheel.ManufacturerName}{Environment.NewLine}" +
-                $"Current Wheel Pressure: {firstWheel.CurrentAirPressure}{Environment.NewLine}" +
-                $"Max Wheel Pressure: {firstWheel.MaxAirPressure}";
+            return wheelsInfo;
         }
 
         private string getEnergySourceInfo()
         {
+            string energySourceInfo;
+
             if (m_EnergySource is FuelEnergySource fuelEnergySource)
             {
-                return fuelEnergySource.GetFuelInfo();
+                energySourceInfo = fuelEnergySource.GetFuelInfo();
             }
-
-            if (m_EnergySource is ElectricEnergySource electricEnergySource)
+            else if (m_EnergySource is ElectricEnergySource electricEnergySource)
             {
-                return electricEnergySource.GetElectricInfo();
+                energySourceInfo = electricEnergySource.GetElectricInfo();
+            }
+            else
+            {
+                energySourceInfo = "Energy Source: No energy information";
             }
 
-            return "Energy Source: No energy information";
+            return energySourceInfo;
         }
 
-        public void AddWheel(
-            Wheel i_Wheel)
+        public void AddWheel(Wheel i_Wheel)
         {
-            m_Wheels.Add(i_Wheel);
+            r_Wheels.Add(i_Wheel);
         }
     }
 }
