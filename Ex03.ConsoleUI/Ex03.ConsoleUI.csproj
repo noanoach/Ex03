@@ -8,11 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="VehiclesDB.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="VehiclesDB.txt">
+    <Content Include="Vehicles.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
