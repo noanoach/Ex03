@@ -9,7 +9,6 @@ namespace Ex03.GarageLogic.Garage
 
         private readonly string m_OwnerName;
         private readonly string m_OwnerPhone;
-
         private eVehicleStatus m_Status;
 
         public Vehicle Vehicle

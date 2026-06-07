@@ -18,10 +18,7 @@ namespace Ex03.GarageLogic.Vehicles
             m_NumberOfWheels = 2;
             m_MaxWheelPressure = 30f;
 
-            m_EnergySource = new FuelEnergySource(
-                0,
-                k_MaxFuelCapacity,
-                eFuelType.Octan98);
+            m_EnergySource = new FuelEnergySource(0, k_MaxFuelCapacity, eFuelType.Octan98);
         }
 
         public override string GetVehicleInfo()

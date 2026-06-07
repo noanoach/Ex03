@@ -32,9 +32,7 @@ namespace Ex03.GarageLogic.Vehicles.Car
         {
         }
 
-        public void InitializeCarDetails(
-            eCarColor i_Color,
-            eDoorsAmount i_DoorsAmount)
+        public void InitializeCarDetails(eCarColor i_Color, eDoorsAmount i_DoorsAmount)
         {
             m_Color = i_Color;
             m_DoorsAmount = i_DoorsAmount;

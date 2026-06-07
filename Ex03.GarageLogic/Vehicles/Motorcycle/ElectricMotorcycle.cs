@@ -17,9 +17,7 @@ namespace Ex03.GarageLogic.Vehicles
             m_NumberOfWheels = 2;
             m_MaxWheelPressure = 30f;
 
-            m_EnergySource = new ElectricEnergySource(
-                0,
-                k_MaxBatteryHours);
+            m_EnergySource = new ElectricEnergySource(0, k_MaxBatteryHours);
         }
 
         public override string GetVehicleInfo()

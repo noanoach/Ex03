@@ -8,12 +8,13 @@ namespace Ex03.GarageLogic.Vehicles
     {
         protected string m_ModelName;
         protected string m_LicenseNumber;
-        protected int m_NumberOfWheels;
-        protected float m_MaxWheelPressure;
-
+        protected EnergySource? m_EnergySource;
         protected readonly List<Wheel> m_Wheels;
 
-        protected EnergySource? m_EnergySource;
+        protected int m_NumberOfWheels;
+        protected float m_MaxWheelPressure;
+        
+        
 
         public string ModelName
         {
@@ -71,15 +72,11 @@ namespace Ex03.GarageLogic.Vehicles
             }
         }
 
-        
-
-        protected Vehicle(
-            string i_LicenseNumber,
-            string i_ModelName)
+       
+        protected Vehicle(string i_LicenseNumber, string i_ModelName)
         {
             m_LicenseNumber = i_LicenseNumber;
             m_ModelName = i_ModelName;
-
             m_Wheels = new List<Wheel>();
         }
 

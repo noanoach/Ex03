@@ -40,9 +40,7 @@ namespace Ex03.GarageLogic.Components
         {
             if (i_CurrentAirPressure < 0 || i_CurrentAirPressure > i_MaxAirPressure)
             {
-                throw new ValueRangeException(
-                    0,
-                    i_MaxAirPressure);
+                throw new ValueRangeException(0, i_MaxAirPressure);
             }
 
             m_ManufacturerName = i_ManufacturerName;
@@ -59,9 +57,7 @@ namespace Ex03.GarageLogic.Components
 
             if (m_CurrentAirPressure + i_AirToAdd > m_MaxAirPressure)
             {
-                throw new ValueRangeException(
-                    0,
-                    m_MaxAirPressure);
+                throw new ValueRangeException(0, m_MaxAirPressure);
             }
 
             m_CurrentAirPressure += i_AirToAdd;
