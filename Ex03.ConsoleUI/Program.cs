@@ -1,12 +1,10 @@
-﻿using Ex03.ConsoleUI.UI;
-
-namespace Ex03.ConsoleUI
+﻿namespace Ex03.ConsoleUI
 {
     public class Program
     {
         public static void Main()
         {
-            ConsoleUI ui = new ConsoleUI();
+            UI.ConsoleUI ui = new UI.ConsoleUI();
 
             ui.Run();
         }
