@@ -72,8 +72,14 @@ namespace Ex03.GarageLogic.Vehicles
             }
         }
 
+<<<<<<< HEAD
        
         protected Vehicle(string i_LicenseNumber, string i_ModelName)
+=======
+        protected Vehicle(
+            string i_LicenseNumber,
+            string i_ModelName)
+>>>>>>> b7b5a5929ad36ed173ab4c4c1aee269894a5e023
         {
             m_LicenseNumber = i_LicenseNumber;
             m_ModelName = i_ModelName;
@@ -87,7 +93,40 @@ namespace Ex03.GarageLogic.Vehicles
             return
                 $"License Number: {m_LicenseNumber}{Environment.NewLine}" +
                 $"Model Name: {m_ModelName}{Environment.NewLine}" +
-                $"Remaining Energy: {RemainingEnergyPercentage:F1}%";
+                $"Remaining Energy: {RemainingEnergyPercentage:F1}%{Environment.NewLine}" +
+                getWheelsInfo() + Environment.NewLine +
+                getEnergySourceInfo();
+        }
+
+        private string getWheelsInfo()
+        {
+            if (m_Wheels.Count == 0)
+            {
+                return "Wheels: No wheels information";
+            }
+
+            Wheel firstWheel = m_Wheels[0];
+
+            return
+                $"Wheels Amount: {m_Wheels.Count}{Environment.NewLine}" +
+                $"Wheel Manufacturer: {firstWheel.ManufacturerName}{Environment.NewLine}" +
+                $"Current Wheel Pressure: {firstWheel.CurrentAirPressure}{Environment.NewLine}" +
+                $"Max Wheel Pressure: {firstWheel.MaxAirPressure}";
+        }
+
+        private string getEnergySourceInfo()
+        {
+            if (m_EnergySource is FuelEnergySource fuelEnergySource)
+            {
+                return fuelEnergySource.GetFuelInfo();
+            }
+
+            if (m_EnergySource is ElectricEnergySource electricEnergySource)
+            {
+                return electricEnergySource.GetElectricInfo();
+            }
+
+            return "Energy Source: No energy information";
         }
 
         public void AddWheel(

@@ -45,5 +45,13 @@ namespace Ex03.GarageLogic.EnergySources
 
             m_CurrentAmount += i_FuelToAdd;
         }
+
+        public string GetFuelInfo()
+        {
+            return
+                $"Fuel Type: {m_FuelType}{Environment.NewLine}" +
+                $"Current Fuel Amount: {CurrentAmount}{Environment.NewLine}" +
+                $"Max Fuel Amount: {MaxAmount}";
+        }
     }
 }

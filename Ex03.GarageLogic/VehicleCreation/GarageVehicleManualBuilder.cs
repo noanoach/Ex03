@@ -24,10 +24,7 @@ namespace Ex03.GarageLogic.VehicleCreation
             bool i_CarriesCooledCargo = default,
             float i_CargoVolume = default)
         {
-            Vehicle vehicle = VehicleCreator.CreateVehicle(
-                i_VehicleType,
-                i_LicenseNumber,
-                i_ModelName);
+            Vehicle vehicle = VehicleCreator.CreateVehicle(i_VehicleType, i_LicenseNumber, i_ModelName);
 
             vehicle.EnergySource.SetRemainingPercentage(i_EnergyPercentage);
 

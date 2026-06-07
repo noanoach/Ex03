@@ -302,7 +302,15 @@ namespace Ex03.ConsoleUI.UI
             Console.WriteLine("4. Octan98");
 
             int fuelChoice = InputHandler.ReadMenuChoice();
-            eFuelType fuelType = (eFuelType)(fuelChoice - 1);
+            eFuelType[] fuelMap =
+            {
+                eFuelType.Soler,
+                eFuelType.Octan95,
+                eFuelType.Octan96,
+                eFuelType.Octan98
+            };
+
+            eFuelType fuelType = fuelMap[fuelChoice - 1];
 
             Console.WriteLine("Enter fuel amount:");
             float fuelAmount = float.Parse(Console.ReadLine());

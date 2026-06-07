@@ -23,5 +23,12 @@ namespace Ex03.GarageLogic.EnergySources
 
             m_CurrentAmount += i_HoursToAdd;
         }
+
+        public string GetElectricInfo()
+        {
+            return
+                $"Current Battery Time: {CurrentAmount}{Environment.NewLine}" +
+                $"Max Battery Time: {MaxAmount}";
+        }
     }
 }
