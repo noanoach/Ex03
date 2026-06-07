@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Ex03.GarageLogic.EnergySources;
 using Ex03.GarageLogic.Enums;
+using Ex03.GarageLogic.FileLoader;
 
 namespace Ex03.GarageLogic.Garage
 {
@@ -93,6 +94,16 @@ namespace Ex03.GarageLogic.Garage
         public string GetVehicleDetails (string i_LicenseNumber)
         {
             return m_Vehicles[i_LicenseNumber].GetGarageVehicleInfo();
+        }
+
+        public void LoadVehiclesFromFile(string i_FilePath)
+        {
+            List<GarageVehicle> vehicles = VehicleFileLoader.LoadVehicles(i_FilePath);
+
+            foreach (GarageVehicle garageVehicle in vehicles)
+            {
+                AddVehicle(garageVehicle);
+            }
         }
     }
 }
