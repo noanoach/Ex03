@@ -152,7 +152,14 @@ namespace Ex03.ConsoleUI.UI
                     Console.WriteLine("3. Black");
                     Console.WriteLine("4. Silver");
 
-                    eCarColor carColor = (eCarColor)(InputHandler.ReadMenuChoice() - 1);
+                    int colorChoice = InputHandler.ReadMenuChoice();
+
+                    if (colorChoice < 1 || colorChoice > 4)
+                    {
+                        throw new ArgumentException("Invalid car color.");
+                    }
+
+                    eCarColor carColor = (eCarColor)(colorChoice - 1);
 
                     Console.WriteLine("Choose doors amount:");
                     Console.WriteLine("2. Two");
@@ -160,7 +167,14 @@ namespace Ex03.ConsoleUI.UI
                     Console.WriteLine("4. Four");
                     Console.WriteLine("5. Five");
 
-                    eDoorsAmount doorsAmount = (eDoorsAmount)InputHandler.ReadMenuChoice();
+                    int doorsChoice = InputHandler.ReadMenuChoice();
+
+                    if (doorsChoice < 2 || doorsChoice > 5)
+                    {
+                        throw new ArgumentException("Invalid doors amount.");
+                    }
+
+                    eDoorsAmount doorsAmount = (eDoorsAmount)doorsChoice;
 
                     garageVehicle = GarageVehicleManualBuilder.Build(
                         vehicleType,
@@ -182,7 +196,14 @@ namespace Ex03.ConsoleUI.UI
                     Console.WriteLine("3. B1");
                     Console.WriteLine("4. AB");
 
-                    eLicenseType licenseType = (eLicenseType)(InputHandler.ReadMenuChoice() - 1);
+                    int licenseChoice = InputHandler.ReadMenuChoice();
+
+                    if (licenseChoice < 1 || licenseChoice > 4)
+                    {
+                        throw new ArgumentException("Invalid license type.");
+                    }
+
+                    eLicenseType licenseType = (eLicenseType)(licenseChoice - 1);
 
                     Console.WriteLine("Enter engine volume:");
                     int engineVolume = int.Parse(Console.ReadLine());
@@ -252,6 +273,14 @@ namespace Ex03.ConsoleUI.UI
             Console.WriteLine("Filter by status? y/n");
             string answer = Console.ReadLine();
 
+            if (answer != "y" &&
+                answer != "Y" &&
+                answer != "n" &&
+                answer != "N")
+            {
+                throw new ArgumentException("Please enter y or n.");
+            }
+
             List<string> licenseNumbers;
 
             if (answer == "y" || answer == "Y")
@@ -302,6 +331,12 @@ namespace Ex03.ConsoleUI.UI
             Console.WriteLine("4. Octan98");
 
             int fuelChoice = InputHandler.ReadMenuChoice();
+
+            if (fuelChoice < 1 || fuelChoice > 4)
+            {
+                throw new ArgumentException("Invalid fuel type.");
+            }
+
             eFuelType[] fuelMap =
             {
                 eFuelType.Soler,
@@ -318,6 +353,8 @@ namespace Ex03.ConsoleUI.UI
             m_Garage.RefuelVehicle(licenseNumber, fuelType, fuelAmount);
 
             Console.WriteLine("Vehicle was refueled.");
+
+
         }
 
         private void chargeVehicle()
