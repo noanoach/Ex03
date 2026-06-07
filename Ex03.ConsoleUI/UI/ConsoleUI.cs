@@ -42,14 +42,12 @@ namespace Ex03.ConsoleUI.UI
                 catch (Exception ex)
                 {
                     Console.WriteLine("Error: {0}", ex.Message);
-
                 }
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
                 Console.Clear();
 
             }
-
         }
 
         private void handleMenuChoice(int i_Choice)
@@ -245,28 +243,40 @@ namespace Ex03.ConsoleUI.UI
 
                 Console.WriteLine("Vehicle was added successfully.");
             }
-
         }
 
         private string getVehicleTypeByChoice(int i_Choice)
         {
+            string vehicleType = string.Empty;
+
             switch (i_Choice)
             {
                 case 1:
-                    return "FuelCar";
+                    vehicleType = "FuelCar";
+                    break;
+
                 case 2:
-                    return "ElectricCar";
+                    vehicleType = "ElectricCar";
+                    break;
+
                 case 3:
-                    return "FuelMotorcycle";
+                    vehicleType = "FuelMotorcycle";
+                    break;
+
                 case 4:
-                    return "ElectricMotorcycle";
+                    vehicleType = "ElectricMotorcycle";
+                    break;
+
                 case 5:
-                    return "FuelTruck";
+                    vehicleType = "FuelTruck";
+                    break;
+
                 default:
                     throw new ArgumentException("Invalid vehicle type.");
             }
-        }
 
+            return vehicleType;
+        }
 
         private void showLicenseNumbers()
         {
@@ -307,8 +317,6 @@ namespace Ex03.ConsoleUI.UI
             m_Garage.ChangeVehicleStatus(licenseNumber, status);
 
             Console.WriteLine("Vehicle status was changed.");
-
-
         }
 
         private void inflateWheelsToMax()
@@ -353,8 +361,6 @@ namespace Ex03.ConsoleUI.UI
             m_Garage.RefuelVehicle(licenseNumber, fuelType, fuelAmount);
 
             Console.WriteLine("Vehicle was refueled.");
-
-
         }
 
         private void chargeVehicle()
@@ -391,7 +397,6 @@ namespace Ex03.ConsoleUI.UI
             }
 
             return (eVehicleStatus)(statusChoice - 1);
-
         }
 
     }
