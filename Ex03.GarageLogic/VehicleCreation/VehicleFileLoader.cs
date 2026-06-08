@@ -1,8 +1,6 @@
 ﻿using Ex03.GarageLogic.Components;
-using Ex03.GarageLogic.Enums;
 using Ex03.GarageLogic.Garage;
 using Ex03.GarageLogic.Vehicles;
-using Ex03.GarageLogic.Vehicles.Car;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -48,18 +46,18 @@ namespace Ex03.GarageLogic.FileLoader
 
         private static void InitializeVehicleSpecificDetails(Vehicle i_Vehicle, string[] i_Fields)
         {
-            if (i_Vehicle is Car car)
+            Dictionary<string, string> specificData = new Dictionary<string, string>();
+
+            List<string> fieldNames =
+                i_Vehicle.GetSpecificFieldNames();
+
+            for (int i = 0; i < fieldNames.Count; i++)
             {
-                car.InitializeCarDetails((eCarColor)Enum.Parse(typeof(eCarColor), i_Fields[8]), (eDoorsAmount)int.Parse(i_Fields[9]));
+                specificData[fieldNames[i]] =
+                    i_Fields[8 + i];
             }
-            else if (i_Vehicle is Motorcycle motorcycle)
-            {
-                motorcycle.InitializeMotorcycleDetails((eLicenseType)Enum.Parse(typeof(eLicenseType), i_Fields[8]), int.Parse(i_Fields[9]));
-            }
-            else if (i_Vehicle is Truck truck)
-            {
-                truck.InitializeTruckDetails(bool.Parse(i_Fields[8]), float.Parse(i_Fields[9]));
-            }
+
+            i_Vehicle.InitializeSpecificDetails(specificData);
         }
 
         private static void InitializeVehicleEnergy(Vehicle i_Vehicle, float i_EnergyPercentage)

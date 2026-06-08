@@ -1,9 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using Ex03.GarageLogic.Garage;
-using Ex03.ConsoleUI.Menus;
+﻿using Ex03.ConsoleUI.Menus;
+using Ex03.GarageLogic;
 using Ex03.GarageLogic.Enums;
+using Ex03.GarageLogic.Garage;
 using Ex03.GarageLogic.VehicleCreation;
+using Ex03.GarageLogic.Vehicles;
+using System;
+using System.Collections.Generic;
 
 namespace Ex03.ConsoleUI.UI
 {
@@ -107,74 +109,80 @@ namespace Ex03.ConsoleUI.UI
 
             if (m_Garage.ContainsVehicle(licenseNumber))
             {
-                m_Garage.ChangeVehicleStatus(licenseNumber, eVehicleStatus.InRepair);
-                Console.WriteLine("Vehicle already exists. Status changed to InRepair.");
+                m_Garage.ChangeVehicleStatus(
+                    licenseNumber,
+                    eVehicleStatus.InRepair);
+
+                Console.WriteLine(
+                    "Vehicle already exists. Status changed to InRepair.");
             }
             else
             {
                 Console.WriteLine("Choose vehicle type:");
-                Console.WriteLine("1. FuelCar");
-                Console.WriteLine("2. ElectricCar");
-                Console.WriteLine("3. FuelMotorcycle");
-                Console.WriteLine("4. ElectricMotorcycle");
-                Console.WriteLine("5. FuelTruck");
 
-                int vehicleTypeChoice = InputHandler.ReadMenuChoice();
-                string vehicleType = getVehicleTypeByChoice(vehicleTypeChoice);
+                for (int i = 0; i < VehicleCreator.SupportedTypes.Count; i++)
+                {
+                    Console.WriteLine(
+                        $"{i + 1}. {VehicleCreator.SupportedTypes[i]}");
+                }
+
+                int vehicleTypeChoice =
+                    InputHandler.ReadMenuChoice();
+
+                if (vehicleTypeChoice < 1 ||
+                    vehicleTypeChoice > VehicleCreator.SupportedTypes.Count)
+                {
+                    throw new ArgumentException(
+                        "Invalid vehicle type.");
+                }
+
+                string vehicleType =
+                    VehicleCreator.SupportedTypes[
+                        vehicleTypeChoice - 1];
 
                 Console.WriteLine("Enter model name:");
                 string modelName = Console.ReadLine();
 
                 Console.WriteLine("Enter remaining energy percentage:");
-                float energyPercentage = float.Parse(Console.ReadLine());
+                float energyPercentage =
+                    float.Parse(Console.ReadLine());
 
                 Console.WriteLine("Enter wheel manufacturer:");
-                string wheelManufacturer = Console.ReadLine();
+                string wheelManufacturer =
+                    Console.ReadLine();
 
                 Console.WriteLine("Enter current wheel pressure:");
-                float currentWheelPressure = float.Parse(Console.ReadLine());
+                float currentWheelPressure =
+                    float.Parse(Console.ReadLine());
 
                 Console.WriteLine("Enter owner name:");
-                string ownerName = Console.ReadLine();
+                string ownerName =
+                    Console.ReadLine();
 
                 Console.WriteLine("Enter owner phone:");
-                string ownerPhone = Console.ReadLine();
+                string ownerPhone =
+                    Console.ReadLine();
 
-                GarageVehicle garageVehicle;
+                Vehicle vehicle =
+                    VehicleCreator.CreateVehicle(
+                        vehicleType,
+                        licenseNumber,
+                        modelName);
 
-                if (vehicleType.Contains("Car"))
+                Dictionary<string, string> specificData =
+                    new Dictionary<string, string>();
+
+                foreach (string fieldName in vehicle.GetSpecificFieldNames())
                 {
-                    Console.WriteLine("Choose car color:");
-                    Console.WriteLine("1. Red");
-                    Console.WriteLine("2. Yellow");
-                    Console.WriteLine("3. Black");
-                    Console.WriteLine("4. Silver");
+                    Console.WriteLine($"Enter {fieldName}:");
 
-                    int colorChoice = InputHandler.ReadMenuChoice();
+                    string value = Console.ReadLine();
 
-                    if (colorChoice < 1 || colorChoice > 4)
-                    {
-                        throw new ArgumentException("Invalid car color.");
-                    }
+                    specificData[fieldName] = value;
+                }
 
-                    eCarColor carColor = (eCarColor)(colorChoice - 1);
-
-                    Console.WriteLine("Choose doors amount:");
-                    Console.WriteLine("2. Two");
-                    Console.WriteLine("3. Three");
-                    Console.WriteLine("4. Four");
-                    Console.WriteLine("5. Five");
-
-                    int doorsChoice = InputHandler.ReadMenuChoice();
-
-                    if (doorsChoice < 2 || doorsChoice > 5)
-                    {
-                        throw new ArgumentException("Invalid doors amount.");
-                    }
-
-                    eDoorsAmount doorsAmount = (eDoorsAmount)doorsChoice;
-
-                    garageVehicle = GarageVehicleManualBuilder.Build(
+                GarageVehicle garageVehicle =
+                    GarageVehicleManualBuilder.Build(
                         vehicleType,
                         licenseNumber,
                         modelName,
@@ -183,65 +191,13 @@ namespace Ex03.ConsoleUI.UI
                         currentWheelPressure,
                         ownerName,
                         ownerPhone,
-                        carColor,
-                        doorsAmount);
-                }
-                else if (vehicleType.Contains("Motorcycle"))
-                {
-                    Console.WriteLine("Choose motorcycle license type:");
-                    Console.WriteLine("1. A");
-                    Console.WriteLine("2. A2");
-                    Console.WriteLine("3. B1");
-                    Console.WriteLine("4. AB");
+                        specificData);
 
-                    int licenseChoice = InputHandler.ReadMenuChoice();
+                m_Garage.AddVehicle(
+                    garageVehicle);
 
-                    if (licenseChoice < 1 || licenseChoice > 4)
-                    {
-                        throw new ArgumentException("Invalid license type.");
-                    }
-
-                    eLicenseType licenseType = (eLicenseType)(licenseChoice - 1);
-
-                    Console.WriteLine("Enter engine volume:");
-                    int engineVolume = int.Parse(Console.ReadLine());
-
-                    garageVehicle = GarageVehicleManualBuilder.Build(
-                        vehicleType,
-                        licenseNumber,
-                        modelName,
-                        energyPercentage,
-                        wheelManufacturer,
-                        currentWheelPressure,
-                        ownerName,
-                        ownerPhone,
-                        i_LicenseType: licenseType,
-                        i_EngineVolume: engineVolume);
-                }
-                else
-                {
-                    Console.WriteLine("Does the truck carry cooled cargo? true/false:");
-                    bool carriesCooledCargo = bool.Parse(Console.ReadLine());
-
-                    Console.WriteLine("Enter cargo volume:");
-                    float cargoVolume = float.Parse(Console.ReadLine());
-
-                    garageVehicle = GarageVehicleManualBuilder.Build(
-                        vehicleType,
-                        licenseNumber,
-                        modelName,
-                        energyPercentage,
-                        wheelManufacturer,
-                        currentWheelPressure,
-                        ownerName,
-                        ownerPhone,
-                        i_CarriesCooledCargo: carriesCooledCargo,
-                        i_CargoVolume: cargoVolume);
-                }
-
-                m_Garage.AddVehicle(garageVehicle);
-
-                Console.WriteLine("Vehicle was added successfully.");
+                Console.WriteLine(
+                    "Vehicle was added successfully.");
             }
         }
 

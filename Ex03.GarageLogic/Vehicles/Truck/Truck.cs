@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Ex03.GarageLogic.Vehicles
 {
@@ -39,6 +40,22 @@ namespace Ex03.GarageLogic.Vehicles
             m_IsCoolingCargo = i_IsCoolingCargo;
             m_CargoVolume = i_CargoVolume;
         }
+
+        public override List<string> GetSpecificFieldNames()
+        {
+            return new List<string>{"CoolingCargo", "CargoVolume"};
+        }
+
+        public override void InitializeSpecificDetails(
+            Dictionary<string, string> i_Data)
+        {
+            InitializeTruckDetails(
+                bool.Parse(
+                    i_Data["CoolingCargo"]),
+                float.Parse(
+                    i_Data["CargoVolume"]));
+        }
+
 
         protected string GetTruckInfo()
         {

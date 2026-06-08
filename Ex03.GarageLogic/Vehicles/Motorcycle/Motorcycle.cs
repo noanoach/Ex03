@@ -1,4 +1,6 @@
-﻿using Ex03.GarageLogic.Enums;
+﻿using System;
+using System.Collections.Generic;
+using Ex03.GarageLogic.Enums;
 
 namespace Ex03.GarageLogic.Vehicles
 {
@@ -38,6 +40,22 @@ namespace Ex03.GarageLogic.Vehicles
         {
             m_LicenseType = i_LicenseType;
             m_EngineVolume = i_EngineVolume;
+        }
+
+        public override List<string> GetSpecificFieldNames()
+        {
+            return new List<string>{"LicenseType", "EngineVolume"};
+        }
+
+        public override void InitializeSpecificDetails(
+            Dictionary<string, string> i_Data)
+        {
+            InitializeMotorcycleDetails(
+                (eLicenseType)Enum.Parse(
+                    typeof(eLicenseType),
+                    i_Data["LicenseType"]),
+                int.Parse(
+                    i_Data["EngineVolume"]));
         }
 
         protected string GetMotorcycleInfo()

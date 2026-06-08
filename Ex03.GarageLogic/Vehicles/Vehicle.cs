@@ -133,6 +133,10 @@ namespace Ex03.GarageLogic.Vehicles
             return energySourceInfo;
         }
 
+        public abstract List<string> GetSpecificFieldNames();
+
+        public abstract void InitializeSpecificDetails(Dictionary<string, string> i_Data);
+
         public void AddWheel(Wheel i_Wheel)
         {
             r_Wheels.Add(i_Wheel);

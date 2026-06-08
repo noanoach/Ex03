@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Ex03.GarageLogic.Enums;
 
 namespace Ex03.GarageLogic.Vehicles.Car
@@ -37,6 +38,22 @@ namespace Ex03.GarageLogic.Vehicles.Car
         {
             m_Color = i_Color;
             m_DoorsAmount = i_DoorsAmount;
+        }
+
+        public override List<string> GetSpecificFieldNames()
+        {
+            return new List<string>{"Color", "Doors"};
+        }
+
+        public override void InitializeSpecificDetails(
+            Dictionary<string, string> i_Data)
+        {
+            InitializeCarDetails(
+                (eCarColor)Enum.Parse(
+                    typeof(eCarColor),
+                    i_Data["Color"]),
+                (eDoorsAmount)int.Parse(
+                    i_Data["Doors"]));
         }
 
         protected string GetCarInfo()
