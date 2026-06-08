@@ -40,10 +40,6 @@ namespace Ex03.GarageLogic.Vehicles.Car
             m_DoorsAmount = i_DoorsAmount;
         }
 
-        public override List<string> GetSpecificFieldNames()
-        {
-            return new List<string>{"Color", "Doors"};
-        }
 
         public override void InitializeSpecificDetails(
             Dictionary<string, string> i_Data)
@@ -54,6 +50,11 @@ namespace Ex03.GarageLogic.Vehicles.Car
                     i_Data["Color"]),
                 (eDoorsAmount)int.Parse(
                     i_Data["Doors"]));
+        }
+
+        public override List<string> GetSpecificFieldNames()
+        {
+            return new List<string> { "Color", "Doors" };
         }
 
         protected string GetCarInfo()

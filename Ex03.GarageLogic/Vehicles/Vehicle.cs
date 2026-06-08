@@ -85,13 +85,13 @@ namespace Ex03.GarageLogic.Vehicles
                 $"License Number: {m_LicenseNumber}{Environment.NewLine}" +
                 $"Model Name: {m_ModelName}{Environment.NewLine}" +
                 $"Remaining Energy: {RemainingEnergyPercentage:F1}%{Environment.NewLine}" +
-                getWheelsInfo() + Environment.NewLine +
-                getEnergySourceInfo();
+                GetWheelsInfo() + Environment.NewLine +
+                GetEnergySourceInfo();
 
             return baseVehicleInfo;
         }
 
-        private string getWheelsInfo()
+        private string GetWheelsInfo()
         {
             string wheelsInfo;
 
@@ -113,7 +113,7 @@ namespace Ex03.GarageLogic.Vehicles
             return wheelsInfo;
         }
 
-        private string getEnergySourceInfo()
+        private string GetEnergySourceInfo()
         {
             string energySourceInfo;
 

@@ -56,7 +56,6 @@ namespace Ex03.GarageLogic.Vehicles
                     i_Data["CargoVolume"]));
         }
 
-
         protected string GetTruckInfo()
         {
             return
